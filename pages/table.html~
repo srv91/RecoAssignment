@@ -1,0 +1,26 @@
+<!-- table.html -->
+    <div class="jumbotron text-center">
+
+          <div class="row">
+            <table id="datatable" class="row-border hover">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Views</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="video in video_array" repeat-done="initDataTable()">
+                  <td>{{video.title}}</td>
+                  <td>{{video.stats}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+<script>
+$('.nav-links').show();
+$('#list_view_button').prop('disabled', false);
+$('#chart_view_button').prop('disabled', false);
+$('#table_view_button').prop('disabled', true);
+</script>

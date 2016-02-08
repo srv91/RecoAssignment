@@ -1,0 +1,18 @@
+<!-- chart.html -->
+    <div class="jumbotron text-center">
+
+	<canvas id="bar" class="chart chart-bar"
+	  chart-data="data" chart-labels="labels" chart-series="series">
+	</canvas><br>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 summary" ng-repeat="video in video_array">
+            <p>{{$index +1}} : {{video.title}}</p>
+          </div>
+        </div>
+    </div>
+<script>
+$('.nav-links').show();
+$('#list_view_button').prop('disabled', false);
+$('#table_view_button').prop('disabled', false);
+$('#chart_view_button').prop('disabled', true);
+</script>

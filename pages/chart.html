@@ -1,0 +1,13 @@
+<!-- chart.html -->
+    <div class="jumbotron text-center">
+
+	<canvas id="bar" class="chart chart-bar"
+	  chart-data="data" chart-labels="labels" chart-series="series">
+	</canvas><br>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 summary" ng-repeat="video in video_array">
+            <p>{{$index +1}} : {{video.title}}</p>
+          </div>
+        </div>
+    </div>
+
